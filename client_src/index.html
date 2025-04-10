@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Symphysis Base UX</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="src/index.js" type="module"></script>
+  </head>
+  
+  <body>
+    <h1>Welcome to Symphysis</h1>
+    <section>
+      <h2>Current Shared State</h2>
+      <pre id="stateDisplay">{}</pre>
+    </section>
+    
+    <section>
+      <h2>Stylized Drop-Down</h2>
+      <stylized-dropdown>
+        <stylized-option>Option 1</stylized-option>
+        <stylized-option>Option 2</stylized-option>
+        <stylized-option>Option 3</stylized-option>
+      </stylized-dropdown>
+    </section>
+    
+    <section>
+      <h2>Routes</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#ux">UX</a></li>
+        <li><a href="#ux/flarn">UX Flarn</a></li>
+      </ul>
+
+      <sym-route path="ux">
+        <sym-route path="flarn">
+          <p>UX Flarn</p>
+        </sym-route>
+
+        <sym-route path="ghibbet">
+          <p>UX Ghibbet</p>
+        </sym-route>
+      </sym-route>
+    </section>
+  </body>
+</html>

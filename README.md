@@ -1,5 +1,5 @@
 # symphysis
-UX framework based on inherent web components.
+UX framework based on inherent technologies.
 
 
 ## Features
